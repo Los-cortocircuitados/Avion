@@ -1,3 +1,5 @@
+//Incluir Librerías
+
 #include <SPI.h>  
 
 #include <nRF24L01.h> 
@@ -8,13 +10,15 @@
 
 #include <RF24_config.h> 
 
+
+//Definir dos pines de la raiofrecuencia
 #define CE_PIN 7 
 
 #define CSN_PIN 8 
 
 byte canal[6] =("00001"); 
 
-RF24 radio(CE_PIN, CSN_PIN); 
+RF24 radio(CE_PIN, CSN_PIN); //Introduzco la información de los pines de la radiofrecuencia
 
 int x; 
 
